@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Flash Cards</title>
+    <script src="assets\js\darkmode.js"></script>
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon</h1>
+        <button class="theme-toggle" id="theme-toggle" type="button">
+            <div class="toggle-track">
+                <div class="toggle-thumb">
+                    <span id="theme-icon">🌙</span>
+                </div>
+            </div>
+        </button>
+        
+        <div id="cors-note" class="cors-note">
+            <strong>Note:</strong> This application requires access to the PokeAPI. If you're seeing errors, you may need to:
+            <ul>
+                <li>Use a browser extension that enables CORS</li>
+                <li>Run this page through a local server</li>
+                <li>Try a different browser</li>
+            </ul>
+        </div>
+        
+        <div class="controls">
+            <input type="number" id="pokemon-id-input" min="1" max="898" placeholder="Enter Pokémon #" value="1">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div id="card-container">
+            <div class="loading">Loading Pokémon data...</div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prev-button" class="nav-button" disabled>Previous</button>
+            <button id="next-button" class="nav-button">Next</button>
+        </div>
+    </div>
+    <script src="assets\js\main.js"></script>
+  
+</body>
+</html>
